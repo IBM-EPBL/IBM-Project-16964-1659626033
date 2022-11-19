@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>about</title>
+	</head>
+  <style>
+    *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+
+font-family: sans-serif;
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.25)),url({{url_for('static',filename= 'crude_oil.jpg')}});
+background-size:cover;
+background-position: center;
+
+}
+.box{
+width: 600px;
+padding: 30px;
+position: absolute;
+top: 50%;
+left: 50%;
+border-radius: 20px;
+transform: translate(-50%,-50%);
+background: rgba(0,0,0,0.80);
+text-align: center;
+box-shadow: 0px 15px 20px rgba(0,0,0,0.75);
+
+}
+.box h1
+{
+color: white;
+text-transform: uppercase;
+font-weight: 700;
+
+}
+.usr input[type="text"]
+{
+border: 0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #0367fd;
+border-color:  #B9B7BD;
+padding: 14px 10px;
+width: 250px;
+outline: none;
+color: white;
+border-radius: 18px;
+transition: 0.25s;
+
+}
+.box input[type="text"]:focus{
+width: 270px;
+border-color:#EEEDE7;
+
+}
+
+.pwd input[type="password"]{
+border: 0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #0367fd;
+border-color: #B9B7BD ;
+padding: 14px 10px;
+width: 250px;
+outline: none;
+color: white;
+border-radius: 18px;
+transition: 0.25s;
+}
+.box input[type="password"]:focus{
+width: 270px;
+border-color:#EEEDE7;
+
+}
+.email input[type="email"]{
+border: 0;
+background: none;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid #0367fd;
+border-color: #B9B7BD ;
+padding: 14px 10px;
+width: 250px;
+outline: none;
+color: white;
+border-radius: 18px;
+transition: 0.25s;
+}
+.box input[type="password"]:focus{
+width: 270px;
+border-color:#EEEDE7;
+
+}
+.box input[type="submit"]{
+
+border: 0;
+background: none;
+display: block;
+margin: 10px auto;
+text-align: center;
+border: 2px solid #B9B7BD;
+padding: 10px 10px;
+width: 100px;
+outline:none;
+color: #B9B7BD;
+border-radius:18px;
+transition:0.25s;
+cursor: pointer;
+
+
+
+
+}
+.box input[type="submit"]:hover{
+background: #EEEDE7;
+color: black;
+font-weight: 700;
+ box-shadow:0px 15px 20px rgba(0,0,0,1.50);
+}
+.link a{
+border: 0;
+background: none;
+display: block;
+margin: 10px auto;
+text-align: center;
+
+padding: 14px 10px;
+width: 100px;
+outline:none;
+color: white;
+
+transition:0.25s;
+cursor: pointer;
+text-decoration: none;
+}
+.link a:hover{
+
+color:#B9B7BD;
+font-weight: 700;
+text-decoration: underline;
+ 
+
+
+}
+nav {
+
+width: 100px;
+height:46px ;
+background:rgba(0,0,0,0.80);
+border-radius: 8px;
+box-shadow: 0px 15px 20px rgba(0,0,0,0.75);
+left:34%;
+}
+nav a{
+font-size: 13px;
+color: #B9B7BD;
+font-family: sans-serif;
+border-radius: 50%;
+text-decoration: none;
+line-height: 45px;
+position: relative;
+z-index: 1;
+display: inline-block;
+text-align: center;
+text-transform: uppercase;
+}
+nav .animation{
+position: absolute;
+height: 2px;
+bottom: 0;
+z-index: 0;
+background: white;
+border-radius: 8px;
+transition: all .5s ease 0s;
+}
+a:nth-child(1){
+width: 100px;
+}
+nav .start-register,a:nth-child(1):hover~.animation{
+width: 90px;
+left: 7px;
+
+}
+a:nth-child(2){
+width: 100px;
+}
+nav .start-game,a:nth-child(2):hover~.animation{
+width: 60px;
+left: 125px;
+
+}
+a:nth-child(3){
+width: 100px;}
+nav .start-blog,a:nth-child(3):hover~.animation{
+width: 60px;
+left: 230px;
+
+}
+a:nth-child(4){
+width: 100px;
+
+}
+nav .start-help,a:nth-child(4):hover~.animation{
+width: 60px;
+left: 335px;
+
+}
+p{
+color: #B9B7BD;
+}
+	<body>
+        
+        </style>
+        <nav><a href=back>Back</a></nav>
+
+  <div class="box">
+      <h1>CRUDE OIL PRICE PREDICTION</h1>
+      
+      <br>
+      
+      <p>Crude oil is one of the most important commodities in the world, accounting for one-third of global energy consumption.</P><br>
+        <P>It is a starting material for most of the products that we use in everyday life, ranging from transportation fuels to plastics.</P><br>
+        <p>Crude oil price fluctuations have a far reaching impact on global economies and thus price forecasting can assist in minimising the risks associated with volatility in oil prices. Price forecasts are very important to various stakeholders: governments, public and private enterprises, policymakers, and investors.</P><br>
+        <p>According to economic theory, the price of crude oil should be easily predictable from the equilibrium between demand and supply, wherein demand forecasts are usually made from GDP, exchange rates and domestic prices, and supply is predicted from past production data and reserve data.</P><br>
+        <p>Predicting demand for oil is usually straightforward, however supply is heavily affected by political activity such as cartelisation by OPEC to regulate prices, technological advances leading to the extraction of higher amounts of oil, and wars and other conflicts which can affect supply unpredictably. </P><br>
+
+        <p>The prices of crude oil for the last 10 days is obtained and is used to predict the crude oil price for today.</p>
+
+     
+      <div class="link">
+        <a href="/">Home</a>
+    
+    </div> 
+  </div>
+    
+
+  </body>
+</html>

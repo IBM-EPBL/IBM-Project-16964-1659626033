@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    </head>
+   
+    
+       
+    <body>
+        <style>
+            
+body{
+  
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.25)),url({{url_for('static',filename= 'crude_oil.jpg')}});
+  background-size:cover;
+  background-position: center;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.75);
+  
+}
+
+
+nav {
+  position: relative;
+  width: 430px;
+  height:46px ;
+  background:rgba(0,0,0,0.80);
+  border-radius: 8px;
+   box-shadow: 0px 15px 20px rgba(0,0,0,0.75);
+left:35%;
+}
+nav a{
+  font-size: 13px;
+  color: #B9B7BD;
+  font-family: sans-serif;
+  border-radius: 50%;
+  text-decoration: none;
+  line-height: 45px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav .animation{
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  z-index: 0;
+  background: white;
+  border-radius: 8px;
+transition: all .5s ease 0s;
+}
+a:nth-child(1){
+  width: 100px;
+}
+nav .start-register,a:nth-child(1):hover~.animation{
+   width: 60px;
+   left: 20px;
+   
+}
+a:nth-child(2){
+  width: 100px;
+}
+nav .start-game,a:nth-child(2):hover~.animation{
+   width: 75px;
+   left: 117px;
+   
+}
+a:nth-child(3){
+  width: 100px;}
+nav .start-blog,a:nth-child(3):hover~.animation{
+   width: 60px;
+   left: 230px;
+  
+}
+a:nth-child(4){
+  width: 100px;
+  
+}
+nav .start-help,a:nth-child(4):hover~.animation{
+   width: 65px;
+   left: 333px;
+  
+}
+a:nth-child(5){
+  width: 100px;
+  
+}
+nav .start-help,a:nth-child(5):hover~.animation{
+   width: 63px;
+   left: 437px;
+  
+}
+
+
+
+.box{
+  width: 300px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%,-50%);
+  background: rgba(0,0,0,0.80);
+  text-align: center;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.75);
+      
+}
+.box h1
+{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+}
+.text{
+  margin-left: 130px;
+  margin-top:150px;
+  bottom: 50%;
+  width: 80%;
+  height: 60%;
+  background: rgba(0,0,0,0.80);
+  text-align: center;
+  color: gray;
+  border-radius: 2%;
+  font-size:30px;
+  font-family: sans-serif;
+}
+ input[type="submit"]{
+    
+    border: 0;
+    background: none;
+    display: block;
+     margin: 10px auto;
+    text-align: center;
+    border: 2px solid #B9B7BD;
+    padding: 10px 10px;
+    width: 100px;
+    outline:none;
+    color: #B9B7BD;
+    border-radius:18px;
+    transition:0.25s;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 3%;
+    
+    
+    
+    
+    
+}
+input[type="submit"]:hover{
+    background: #EEEDE7;
+    color: black;
+    font-weight: 700;
+     box-shadow:0px 15px 20px rgba(0,0,0,1.50);
+}
+        </style>
+    
+        <nav>
+            <a href="/">Home</a>
+            <a href="register">Register</a>
+            <a href="login">Login</a>
+            <a href="about">about</a>
+             
+             
+             
+             <div class="animation start-home"></div>
+        </nav>
+        
+        
+        <div class="text">
+            <h1>CRUDE OIL PRICE PREDICTION</h1>
+        Demand for oil is inelastic, therefore the rise in price is good news for producers because they will see an increase in their revenue. Oil importers, however, will experience increased costs of purchasing oil. Because oil is the largest traded commodity, the effects are quite significant. A rising oil price can even shift economic/political power from oil importers to oil exporters. The crude oil price movements are subject to diverse influencing factors
+    </div>
+    </body>
+
+</html>
